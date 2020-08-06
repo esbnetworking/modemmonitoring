@@ -1,0 +1,10 @@
+[Unit]
+Description=Modem Probe and Restart
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/domoticz/scripts/modemsearch.py
+
+[Install]
+WantedBy=multi-user.target
