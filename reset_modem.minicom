@@ -1,0 +1,7 @@
+send AT+CFUN=0
+sleep 3
+send AT+CFUN=0
+sleep 3
+send AT+CFUN=1
+sleep 3
+! killall -15 minicom
